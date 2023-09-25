@@ -1,0 +1,19 @@
+gudang
+
+admin, barang masuk, barang keluar
+
+1. admin
+
+admin mendaftar di database setelah itu login dan mendapatkan token
+
+2. barang masuk ($barangMasuk)
+id, namaBarang, merekBarang
+
+admin menginput dan menghapus data menggunakan token
+apabila ingin melihat barang tidak usah menggunakan token
+
+3. barang keluar ($barangKeluar)
+id, namaBarang, merekBarang 
+
+admin menginput dan menghapus data menggunakan token
+apabila ingin melihat barang tidak usah menggunakan token

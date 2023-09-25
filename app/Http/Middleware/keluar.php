@@ -16,11 +16,7 @@ class keluar
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::guard('keluar')->check()) {
-            return response()->json([
-                'pesan' => 'masukkan token (middleware)'
-            ]);
-        }
+
         return $next($request);
     }
 }

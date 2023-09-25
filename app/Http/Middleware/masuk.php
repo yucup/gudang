@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Auth;
 
 class masuk
 {
@@ -16,11 +15,6 @@ class masuk
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::guard('masuk')->check()) {
-            return response()->json([
-                'pesan' => 'masukkan token (middleware)'
-            ]);
-        }
         return $next($request);
     }
 }

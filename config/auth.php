@@ -40,14 +40,14 @@ return [
             'driver' => 'jwt',
             'provider' => 'users',
         ],
-        'masuk' => [
-            'driver' => 'session',
-            'provider' => 'masuks',
-        ],
-        'keluar' => [
-            'driver' => 'session',
-            'provider' => 'keluars',
-        ],
+        // 'masuk' => [
+        //     'driver' => 'session',
+        //     'provider' => 'masuks',
+        // ],
+        // 'keluar' => [
+        //     'driver' => 'session',
+        //     'provider' => 'keluars',
+        // ],
     ],
 
     /*
@@ -72,20 +72,20 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'masuks' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\BarangMasuk::class,
-        ],
-        'keluars' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\BarangKeluar::class,
+        // 'masuks' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\BarangMasuk::class,
+        // ],
+        // 'keluars' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\BarangKeluar::class,
         ],
 
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
-    ],
+        // ],
 
     /*
     |--------------------------------------------------------------------------

@@ -54,14 +54,22 @@ class Keluar extends Controller
      */
     public function update(Request $request, string $id)
     {
-         $keluar = BarangKeluar::find($id);
-            $keluar->namaBarang = $request->namaBarang;
-            $keluar->merekBarang = $request->merekBarang;
-            $keluar->save();
+        //  $keluar = BarangKeluar::find($id);
+        //     $keluar->namaBarang = $request->namaBarang;
+        //     $keluar->merekBarang = $request->merekBarang;
+        //     $keluar->save();
+
+        $data = BarangKeluar::find($id);
+        
+        foreach ($data['data'] as $key => $value) {
+            $data->namaBarang = $value['namaBarang'];
+            $data->merekBarang = $value['merekBarang'];
+
+        }
             
-        return response()->json([
-            'message' => 'data has updated'
-        ]);
+        // return response()->json([
+        //     'message' => 'data has updated'
+        // ]);
     }
 
     /**

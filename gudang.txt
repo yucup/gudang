@@ -17,3 +17,13 @@ id, namaBarang, merekBarang
 
 admin menginput dan menghapus data menggunakan token
 apabila ingin melihat barang tidak usah menggunakan token
+
+/////////////////////////////////////////////////////////////////////////////
+
+pada config auth.php aku memberikan komen pada guards
+
+pada middleware aku hanya memberikan prefix auth nya saja
+
+pad file App/Http/Middleware/kernel.php aku memberikan komen pada "masuk" dan "keluar"
+
+pada file App/Http/Middlewa aku menghapus file masuk.php dan keluar.php

@@ -11,29 +11,8 @@ Postman pada gudang
    ![image](https://github.com/yucup/gudang/assets/61656513/a9ebae17-43a1-4555-867c-e0044e0514eb)
 
 5. middleware
-   Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
-    Route::post('register', [AuthController::class, 'register']);
-    Route::post('login', [AuthController::class, 'login']);
-    Route::post('logout', [AuthController::class, 'logout']);
-    Route::post('refresh', [AuthController::class, 'refresh']);
-    Route::post('me', [AuthController::class, 'me']);
-});
+![image](https://github.com/yucup/gudang/assets/61656513/5e1e40c8-b82d-4a9f-83d6-dc0f3a3bee35)
 
-Route::group(['prefix' => 'data'], function () {
-    Route::get('/', [Keluar::class, 'index']);
-    Route::get('/{id}', [Keluar::class, 'show']);
-    Route::post('/', [Keluar::class, 'store']);
-    Route::put('/', [Keluar::class, 'update']);
-    Route::delete('/{id}', [Keluar::class, 'destroy']);
-});
-
-Route::group(['prefix' => 'barang'], function () {
-    Route::get('/', [Masuk::class, 'index']);
-    Route::get('/{id}', [Masuk::class, 'show']);
-    Route::post('/', [Masuk::class, 'store']);
-    Route::put('/{id}', [Masuk::class, 'update']);
-    Route::delete('/{id}', [Masuk::class, 'destroy']);
-});
   
 
 
